@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teddy Heidmann</title>
-    <link rel="stylesheet" href="http://static.alphasigcornell.org/main/css/foundation.css" />
+    <link rel="stylesheet" href="foundation/css/foundation.css" />
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
     <style>
 	.sticky, .name, .top-bar, .top-bar-section li a:not(.button){
@@ -39,7 +39,7 @@
 		color:#535D64 !important;
 	}
     </style>
-    <script src="http://static.alphasigcornell.org/main/js/vendor/modernizr.js"></script>
+    <script src="foundation/js/vendor/modernizr.js"></script>
   </head>
   <body>
 
@@ -95,10 +95,10 @@
                     <a href="#alphasig">Alpha Sigma Phi, Iota Chapter Website</a>
                     <div id="alphasig" class="content">
                         <ul class="clearing-thumbs small-block-grid-2 medium-block-grid-3 large-block-grid-4" data-clearing>
-							<li><a href="img/brothers_home.png" data-caption="Home page"><img src="img/brothers_home.png"></a></li>
-							<li><a href="img/brothers_login.png" data-caption="Login screen for backend section"><img src="img/brothers_login.png"></a></li>
-							<li><a href="img/brothers_treas.png" data-caption="Page for viewing individual accounts"><img src="img/brothers_treas.png"></a></li>
-                            <li><a href="img/brothers_treas_one.png" data-caption="Individual account page for viewing transactions"><img src="img/brothers_treas_one.png"></a></li>
+							<li><a href="img/brothers_home.png"><img data-caption="Home page" src="img/brothers_home.png"></a></li>
+							<li><a href="img/brothers_login.png"><img data-caption="Login screen for backend section" src="img/brothers_login.png"></a></li>
+							<li><a href="img/brothers_treas.png"><img data-caption="Page for viewing individual accounts" src="img/brothers_treas.png"></a></li>
+                            <li><a href="img/brothers_treas_one.png"><img data-caption="Individual account page for viewing transactions" src="img/brothers_treas_one.png"></a></li>
 						</ul>
                     	<a class="parlink" target="_blank" href="http://alphasigcornell.org/">Website</a>
                         <p>I developed a website from scratch using Django (roughly 6,000 lines of code written). It includes both a front-end section for the public to view (link above), and a hidden section for viewing individual accounts, social deposits, house points, etc, as well as a wiki with a page for each brother.</p>
@@ -110,9 +110,9 @@
                     <a href="#signin">Django Sign-in Page with Webcam</a>
                     <div id="signin" class="content">
                     	<ul class="clearing-thumbs small-block-grid-2 medium-block-grid-3" data-clearing>
-							<li><a href="img/signin_main.png" data-caption="Main signin page"><img src="img/signin_main.png"></a></li>
-							<li><a href="img/signin_all.png" data-caption="List of all signins"><img src="img/signin_all.png"></a></li>
-							<li><a href="img/signin_one.png" data-caption="View of individual signin"><img src="img/signin_one.png"></a></li>
+							<li><a href="img/signin_main.png"><img data-caption="Main signin page" src="img/signin_main.png"></a></li>
+							<li><a href="img/signin_all.png"><img data-caption="List of all signins" src="img/signin_all.png"></a></li>
+							<li><a href="img/signin_one.png"><img data-caption="View of individual signin" src="img/signin_one.png"></a></li>
 						</ul>
                     	<!--<a class="parlink" target="_blank" href="http://github.com/ateddy42/django-signin">GitHub Repository</a>-->
                         <p>Used for a few organizations I'm a part of, I developed a website to allow people to sign in at meetings by filling out personal info, taking a picture with a webcam, and uploading it to a server. The head of the organization can later log in and view a list of all the guests that day, and there is a mirrored site for other members of the group to view the guest that the head is currently reviewing. I am currently fixing bugs and will be putting the code up on GitHub soon.</p>
@@ -186,8 +186,10 @@
         </ul></center>
     </footer>
 
-    <script src="http://static.alphasigcornell.org/main/js/vendor/jquery.js"></script>
-    <script src="http://static.alphasigcornell.org/main/js/foundation.min.js"></script>
+	<script src="foundation/js/vendor/jquery.js"></script>
+	<script src="foundation/js/foundation/foundation.js"></script>
+	<script src="foundation/js/foundation/foundation.clearing.js"></script>
+	<script src="foundation/js/foundation/foundation.accordion.js"></script>
     <script>
       $(document).foundation();
     </script>
